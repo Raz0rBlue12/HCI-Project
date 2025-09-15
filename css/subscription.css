@@ -1,0 +1,159 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+head, body {
+    background-color: #161E31;
+}
+
+.navbar-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 8px 100px;
+    background: rgba(0, 0, 0, 0.5); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+
+#logo-asphalt {
+    margin-left: -20rem;
+    width: 7rem ;
+}
+
+#color-on {
+    color: #FD105E;
+}
+
+
+.navbar a {
+    position: relative;
+    font-size: 20px;
+    color: #fff;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 40px;
+}
+
+.navbar a::before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 3px ;
+    background: #FD105E;
+    transition: .3s;
+}
+
+.navbar a:hover::before {
+    width: 100%;
+}
+
+.section-one {
+    background-color: #161E31;
+    height: 100%;
+    margin-top: 5rem;
+}
+
+.title-container {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+}
+
+.section-one-title {
+    color: white;
+    font-weight: 600;
+    font-size: 24px;
+    margin-top: 4rem;
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    height: 550px;
+    width: 1000px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #2D3250;
+    margin-top: 2.2rem;
+    border-radius: 22px;
+    overflow: hidden;
+}
+
+.card-image {
+    width: 550px;
+}
+
+.input-form {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 1rem;
+}
+
+.form {
+    margin-top: 1rem;
+    margin-left: 2rem;
+    width: 35%;
+}
+
+.input-form input {
+    padding: 5px 9rem 5px 4px;
+    border-radius: 6px;
+    accent-color: black;;
+}
+
+.gender-form {
+    display: flex;
+    gap: 12px;
+}
+
+.agree-form {
+    color: white;
+    font-size: 14px;
+}
+
+.submit-button-container {
+    cursor: pointer;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.submit-button {
+    border: none;
+    cursor: pointer;
+    padding: 20px 80px 20px 80px;
+    background-color: white;
+    font-weight: 600;
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    border-radius: 18px;
+    margin-top: 25rem;
+    margin-left: -35rem;
+    transition: 0.3s ease-in-out;
+}
+
+.submit-button:hover {
+    background-color: black;
+    color: white;
+}
+
+.error-message {
+    color: red;
+}

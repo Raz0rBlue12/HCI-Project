@@ -1,0 +1,189 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 8px 100px;
+    background: rgba(0, 0, 0, 0.5); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+
+#logo-asphalt {
+    margin-left: -20rem;
+    width: 7rem ;
+}
+
+#color-on {
+    color: #FD105E;
+}
+
+.navbar a {
+    position: relative;
+    font-size: 20px;
+    color: #fff;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 40px;
+}
+
+.navbar a::before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 3px ;
+    background: #FD105E;
+    transition: .3s;
+}
+
+.navbar a:hover::before {
+    width: 100%;
+}
+
+.section-one {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)), url("../assets/gameplay-4.gif");
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.section-two {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)), url("../assets/events-bg.png");
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+
+.title {
+    color: #FD105E;
+    font-weight: 700;
+    font-size: 42px;
+    display: flex;
+    justify-content: center;
+}
+
+.title p {
+    margin-top: 2rem;
+}
+
+.carousel-container {
+    overflow: hidden;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.image-container {
+    display: flex;
+    width: calc(25% * 10);
+    animation: scroll 5s linear infinite;
+    gap: 2rem;
+}
+
+.image-container img {
+    width: 25%;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(calc(-20% * 5));
+    }
+}
+
+.section-three {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)), url("../assets/esports-bg.png");
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+}
+
+.esport-container div p {
+    color: #FD105E;
+    display: flex;
+    justify-content: center;
+    width: 40%;
+    text-align: center;
+    text-shadow: 2px 2px white;
+}
+
+.top-image-container {
+    display: flex;
+    justify-content: center;
+}
+
+.top-image-container img {
+    width: 15%;
+    padding: 2rem;
+}
+
+.bottom-image-container {
+    display: flex;
+    justify-content: center;
+}
+
+.bottom-image-container img {
+    width: 15%;
+    padding: 2rem;
+    padding-bottom: 4rem;
+}
+
+.section-four {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)), url("../assets/partners-bg.png");
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+}
+
+.partners-container {
+    color: white;
+    font-size: 42px;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+}
+
+.partners-title {
+    margin-top: 2rem;
+    text-shadow: 2px 2px #FD105E;
+}
+
+.partners-desc {
+    margin-top: 2rem;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+}
+
+.partners-image {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.partners-image img {
+    width: 10rem;
+    height: 100%;
+    padding: 2rem;
+}

@@ -1,0 +1,185 @@
+    * {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 8px 100px;
+    background: rgba(0, 0, 0, 0.5); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+
+#logo-asphalt {
+    margin-left: -20rem;
+    width: 7rem ;
+}
+
+#color-on {
+    color: #FD105E;
+}
+
+.navbar a {
+    position: relative;
+    font-size: 20px;
+    color: #fff;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 40px;
+}
+
+.navbar a::before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 3px ;
+    background: #FD105E;
+    transition: .3s;
+}
+
+.navbar a:hover::before {
+    width: 100%;
+}
+
+.section-one {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)), url("../assets/home-background.png");
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.download-button {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    color: black;
+    /* font-size: 13px; */
+    padding: 32.32px 80px 32.32px 80px;
+    background-color: white;
+    border-radius: 14px;
+    font-weight: 600;
+    transition: 0.3s ease-in-out;
+    margin-top: 17rem;
+    /* margin: 16rem 0 0 8rem; */
+}
+
+.download-button p {
+font-size: 40px;
+
+
+}
+
+.download-button:hover {
+    background-color: #FD105E;
+    color: white;
+    border: 1px solid white;
+}
+
+.header-banner {
+    background-image: url('../assets/backround-home.png');
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    text-align: center;
+}
+
+.header-title {
+    color: white;
+    padding: 20px;
+    height: 20px;
+    background-color: #FD105E;
+    position: absolute;
+    font-size: 20px;
+    font-weight: 600;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin: 5rem 5rem 5rem 5rem;
+}
+
+.header-title-shadow {
+    background-color: white;
+    padding: 2rem;
+    width: 15rem;
+    height: 0.1rem;
+    margin: 4rem 0rem 5rem 7rem;
+}
+
+.description-container {
+    display: flex;
+}
+
+.description {
+    color: white;
+    width: 40%;
+    font-size: 24px;
+    margin-left: 4rem;
+    text-align: left;
+    font-weight: 600;
+}
+
+.car-promotion-image {
+    width: 200%;
+    border: 2px solid white;
+    margin-left: 1rem;
+}
+
+.main-container {
+    background-image: url('../assets/gameplay-background.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.gameplay-title {
+    color: white;
+    padding: 20px;
+    height: 20px;
+    background-color: #FD105E;
+    position: absolute;
+    font-size: 20px;
+    font-weight: 600;
+    margin: 5rem 5rem 5rem 5rem;
+}
+
+.gameplay-title-shadow {
+    background-color: white;
+    padding: 2rem;
+    width: 4.5rem;
+    height: 0.1rem;
+    margin: 4rem 0rem 5rem 7rem;
+}
+
+.image-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    padding: 1rem;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    border: 2px solid white;
+}

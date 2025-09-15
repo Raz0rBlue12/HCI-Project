@@ -1,0 +1,115 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    /* background-color: #000408; */
+}
+
+.navbar-container {
+    position: sticky;
+    top: 0;
+    /* width: 100%; */
+    padding: 8px 100px;
+    background: rgba(0, 0, 0, 100);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+
+#logo-asphalt {
+    margin-left: -20rem;
+    width: 7rem;
+}
+
+#color-on {
+    color: #FD105E;
+}
+
+.navbar a {
+    position: relative;
+    font-size: 20px;
+    color: #fff;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 40px;
+}
+
+.navbar a::before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background: #FD105E;
+    transition: .3s;
+}
+
+.navbar a:hover::before {
+    width: 100%;
+}
+
+.link {
+    color: white;
+    text-decoration: none;
+}
+
+#showcase-tier,
+#showcase-tier-s,
+#showcase-tier-a,
+#showcase-tier-b,
+#showcase-tier-c,
+#showcase-tier-d {
+    background-color: #607274;
+    padding: 2rem 8rem;
+    color: white;
+}
+
+#cards-showcase {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    max-width: 850px;
+    margin: auto;
+}
+
+#card-car {
+    background-color: #AAD7D9;
+}
+
+#card-header {
+    position: relative;
+    right: 10px;
+}
+
+#card-header>#card-header-text {
+    font-size: 0.95rem;
+    text-align: center;
+    padding: 0.5rem 0rem;
+    background-color: #3D3B40;
+}
+
+#card-header>img {
+    display: block;
+    width: 240px;
+    height: 100%;
+}
+
+#card-car>#card-title {
+    font-size: 1.2rem;
+    font-weight: 900;
+    color: #2e2d30;
+    padding: 0.5rem 0.5rem;
+}
+
+#card-title>a {
+    color: #2e2d30;
+}
+
+#card-title>a:hover {
+    color: #75727c;
+}
